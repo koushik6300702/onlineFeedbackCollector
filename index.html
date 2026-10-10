@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Feedback Collector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <h1>Online Feedback Collector</h1>
+    <p>We value your feedback!</p>
+
+    <form action="/feedback" method="POST">
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="rating">Rating (1 to 5):</label><br>
+        <select id="rating" name="rating" required>
+            <option value="">Select rating</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+        <br><br>
+
+        <label for="message">Comments:</label><br>
+        <textarea id="message" name="message"
+                  rows="5" required></textarea>
+        <br><br>
+
+        <button type="submit">Submit Feedback</button>
+
+    </form>
+
+</body>
+</html>
