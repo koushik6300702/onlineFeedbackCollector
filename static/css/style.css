@@ -1,0 +1,33 @@
+/* Admin dashboard table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #d5dce5;
+    padding: 12px;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+th {
+    background: #155e91;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f1f6fa;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.card {
+    overflow-x: auto;
+}
